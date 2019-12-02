@@ -25,13 +25,13 @@ componentWillMount(){
                 <View style={{ flex:1 }}>
                     <View style={{Height:this.startHeaderHeight, backgroundColor:'white', borderBottomWidth:1, borderBottomColor:'#dddddd'}}>
                         <View style={{ 
-                        flexDirection: 'row',
-                        padding: 10,
-                        backgroundColor:"white",
-                        marginHorizontal: 20,
-                        shadowOffset:{
-                            width:0,
-                            height:0},
+                            flexDirection: 'row',
+                            padding: 10,
+                            backgroundColor:"white",
+                            marginHorizontal: 20,
+                            shadowOffset:{
+                                width:0,
+                                height:0},
                             shadowColor:'black',
                             shadowOpacity:0.2,
                             elevation:1,
