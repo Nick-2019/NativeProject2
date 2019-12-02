@@ -23,7 +23,7 @@ componentWillMount(){
         return(
             <SafeAreaView style={{ flex:1 }}>
                 <View style={{ flex:1 }}>
-                    <View style={{Height:this.startHeaderHeight, backgroundColor:'white', borderBottomWidth:1, borderBottomColor:'#dddddd'}}>
+                    <View style={{Height:this.startHeaderHeight, backgroundColor:'white', borderBottomWidth:0, borderBottomColor:'#dddddd'}}>
                         <View style={{ 
                             flexDirection: 'row',
                             padding: 10,

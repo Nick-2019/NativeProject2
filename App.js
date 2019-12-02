@@ -9,6 +9,7 @@ import Saved from './screens/Saved'
 import Inbox from './screens/Inbox'
 import Trips from './screens/Trips'
 import Profile from './screens/Profile'
+// import Tilly from './screens/Tilly'
 
 
 export default createBottomTabNavigator({
@@ -35,7 +36,7 @@ export default createBottomTabNavigator({
     navigationOptions:{
       tabBarLabel:'TRIPS',
       tabBarIcon:({tintColor})=>(
-        <Icon name="ios-map" color={tintColor} size={24} />
+        <Icon name="ios-airplane" color={tintColor} size={24} />
       )
     }
   },
@@ -57,6 +58,15 @@ export default createBottomTabNavigator({
       )
     }
   },
+  // Tilly:{
+  //   screen:Tilly,
+  //   navigationOptions:{
+  //     tabBarLabel:'TILLY',
+  //     tabBarIcon:({tintColor})=>(
+  //       <Icon name="ios-person" color={tintColor} size={24} />
+  //     )
+  //   }
+  // }
 },{
   tabBarOptions:{
     activeTintColor:'red',
