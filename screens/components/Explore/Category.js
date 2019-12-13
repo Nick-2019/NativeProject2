@@ -15,7 +15,7 @@ class Category extends Component {
 
             </View>
             <View style={{flex:1, paddingLeft:10, paddingTop:10 }}>
-                <Text>Home</Text>
+                <Text>{this.props.name}</Text>
             </View>
         </View>
         );
