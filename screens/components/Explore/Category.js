@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { 
     View,
     Text,
-    StyleSheet
+    StyleSheet,
+    Image
 } from "react-native";
 
 class Category extends Component {
