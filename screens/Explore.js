@@ -8,11 +8,14 @@ import{
     Platform,
     StatusBar,
     ScrollView,
-    Image
+    Image,
+    Dimensions
 } from "react-native"
 
 import Icon from 'react-native-vector-icons/Ionicons'
+import Category from './components/Explore/Category'
 
+const {height,width} = Dimensions.get('window')
 class Explore extends Component{
 componentWillMount(){
     this.startHeaderHeight = 80
@@ -48,10 +51,31 @@ componentWillMount(){
                                 What can we help you find, April?
                             </Text>
                             <View style={{height:130, marginTop:20}}>
-                                <ScrollView>
-
+                                <ScrollView 
+                                horizontal={true}
+                                showsHorizontalScrollIndicator={false}
+                                >
+                                    <Category imageUri={require('../assets/home.jpg')}
+                                    name="Home" />
+                                    <Category imageUri={require('../assets/experiences.jpg')}
+                                    name="Experiences" />
+                                    <Category imageUri={require('../assets/restaurant.jpg')}
+                                    name="Restaurants" />
                                 </ScrollView>
 
+                            </View>
+                            <View style={{marginTop:40, paddingHorizontal:20, }}>
+                                <Text style={{fontSize:24, fontWeight:"700"}} >
+                                    Introducing AirBNB Plus
+                                </Text>
+                                <Text style={{fontWeight:'100', marginTop:10}}>
+                                    A new selection of homes verified for quality and comfort
+                                </Text>
+                                <View style={{width: width-40, height:200, marginTop: 20 }}>
+                                    <Image 
+                                    style={{flex:1, height:null, width: null, resizeMode:"cover", borderRadius:5, borderWidth:1, borderColor:'#dddddd'   }}
+                                    source={require('../assets/home.jpg')} />
+                                </View>
                             </View>
                         </View>
 
